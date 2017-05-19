@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		
+		<style type="text/css">
+			
+			svg{
+				width: 1200px;
+				height: 800px;
+				/*background: url(img/卧室f1热区分布.jpg) no-repeat top center;*/
+				margin: 0 auto;
+				display: block;
+			}
+			polygon{
+				fill: rgba(0,0,0,.4);
+				stroke: yellow;
+				color: #000;
+			}
+		</style>
+	</head>
+	<body>
+		<svg>
+			<polygon class="diaodeng" points="490,40 490,260 700,260 700,40">吊灯</polygon>
+			<polygon id="qiangmian" points="0,0 130,0 280,250 280,550 230,550 230,180 105,180 105,800 0,800">墙面</polygon>
+			<polygon class="peishi" points="105,180 230,180 230,550 300,550 350,550 350,590 500,590 500,740 340,740 340,690 290,690 230,800 105,800">配饰</polygon>
+			<polygon class="tianhuaban" points="130,0 280,250 800,250 1110,0">天花板</polygon>
+			<polygon class="beijinqiang" points="1110,0 800,250 750,250 750,420 1200,420 1200,0">背景墙</polygon>
+			<polygon class="chuang" points="500,550 710,550 710,420 1200,420 1200,740 500,740">床</polygon>
+			<polygon class="chuanglian" points="280,500 280,250 750,250 750,420 710,420 710,500">窗帘</polygon>
+			<polygon class="jiaju" points="280,500 710,500 710,550 500,550 500,590 350,590 350,550 280,550">家具</polygon>
+			<polygon class="ditan" points="290,690 340,690 340,740 750,740 750,800 230,800">地毯</polygon>
+			<polygon class="dimain" points="750,740 1200,740 1200,800 750,800">地面</polygon>
+		</svg>
+	</body>
+	<script type="text/javascript">
+		qiangmian.onclick = function(){
+			alert(1)
+		}
+	</script>
+</html>
